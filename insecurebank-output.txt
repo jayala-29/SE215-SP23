@@ -1,0 +1,140 @@
+root@2720f7b86fb4:/# ./drozer-testing.sh $ipadd "com.android.insecurebankv2"
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+Package: com.android.insecurebankv2
+  Application Label: InsecureBankv2
+  Process Name: com.android.insecurebankv2
+  Version: 1.0
+  Data Directory: /data/user/0/com.android.insecurebankv2
+  APK Path: /data/app/~~8mE1XEA7n1l8iJBA2yHpQw==/com.android.insecurebankv2-09JJy_WiLasz76FRDNBnUQ==/base.apk
+  UID: 10487
+  GID: [3003]
+  Shared Libraries: [/system/framework/android.test.base.jar, /system/framework/org.apache.http.legacy.jar]
+  Shared User ID: null
+  Uses Permissions:
+  - android.permission.INTERNET
+  - android.permission.WRITE_EXTERNAL_STORAGE
+  - android.permission.SEND_SMS
+  - android.permission.USE_CREDENTIALS
+  - android.permission.GET_ACCOUNTS
+  - android.permission.READ_PROFILE
+  - android.permission.READ_CONTACTS
+  - android.permission.READ_PHONE_STATE
+  - android.permission.READ_CALL_LOG
+  - android.permission.ACCESS_NETWORK_STATE
+  - android.permission.ACCESS_COARSE_LOCATION
+  - android.permission.POST_NOTIFICATIONS
+  - android.permission.READ_EXTERNAL_STORAGE
+  - android.permission.ACCESS_BACKGROUND_LOCATION
+  - android.permission.ACCESS_MEDIA_LOCATION
+  - android.permission.READ_MEDIA_AUDIO
+  - android.permission.READ_MEDIA_VIDEO
+  - android.permission.READ_MEDIA_IMAGES
+  Defines Permissions:
+  - None
+
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+Attack Surface:
+  5 activities exported
+  1 broadcast receivers exported
+  1 content providers exported
+  0 services exported
+    is debuggable
+checking activities...
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+Package: com.android.insecurebankv2
+  com.android.insecurebankv2.LoginActivity
+    Permission: null
+  com.android.insecurebankv2.PostLogin
+    Permission: null
+  com.android.insecurebankv2.DoTransfer
+    Permission: null
+  com.android.insecurebankv2.ViewStatement
+    Permission: null
+  com.android.insecurebankv2.ChangePassword
+    Permission: null
+
+starting com.android.insecurebankv2.LoginActivity...
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+starting com.android.insecurebankv2.PostLogin...
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+starting com.android.insecurebankv2.DoTransfer...
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+starting com.android.insecurebankv2.ViewStatement...
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+starting com.android.insecurebankv2.ChangePassword...
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+checking for sql injection...
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+Scanning com.android.insecurebankv2...
+Not Vulnerable:
+  content://com.android.insecurebankv2.TrackUserContentProvider/
+  content://com.google.android.gms.games
+  content://com.google.android.gms.games/
+  content://com.android.insecurebankv2.TrackUserContentProvider
+
+Injection in Projection:
+  content://com.android.insecurebankv2.TrackUserContentProvider/trackerusers
+  content://com.android.insecurebankv2.TrackUserContentProvider/trackerusers/
+
+Injection in Selection:
+  content://com.android.insecurebankv2.TrackUserContentProvider/trackerusers
+  content://com.android.insecurebankv2.TrackUserContentProvider/trackerusers/
+checking content providers...
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+Scanning com.android.insecurebankv2...
+Unable to Query  content://com.android.insecurebankv2.TrackUserContentProvider/
+Unable to Query  content://com.google.android.gms.games
+Unable to Query  content://com.android.insecurebankv2.TrackUserContentProvider
+Able to Query    content://com.android.insecurebankv2.TrackUserContentProvider/trackerusers
+Able to Query    content://com.android.insecurebankv2.TrackUserContentProvider/trackerusers/
+Unable to Query  content://com.google.android.gms.games/
+
+Accessible content URIs:
+  content://com.android.insecurebankv2.TrackUserContentProvider/trackerusers
+  content://com.android.insecurebankv2.TrackUserContentProvider/trackerusers/
+checking content://com.android.insecurebankv2.TrackUserContentProvider/trackerusers for exposing info...
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+| id | name |
+
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+Accessible tables for uri content://com.android.insecurebankv2.TrackUserContentProvider/trackerusers:
+  android_metadata
+  names
+  sqlite_sequence
+
+checking content://com.android.insecurebankv2.TrackUserContentProvider/trackerusers/ for exposing info...
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+| id | name |
+
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+Accessible tables for uri content://com.android.insecurebankv2.TrackUserContentProvider/trackerusers/:
+  android_metadata
+  names
+  sqlite_sequence
+
+checking broadcast receivers...
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+Package: com.android.insecurebankv2
+  com.android.insecurebankv2.MyBroadCastReceiver
+    Permission: null
+
+checking services...
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+Package: com.android.insecurebankv2
+  No exported services.
