@@ -1,0 +1,128 @@
+root@2720f7b86fb4:/# ./drozer-testing.sh $ipadd "jakhar.aseem.diva"
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+Package: jakhar.aseem.diva
+  Application Label: Diva
+  Process Name: jakhar.aseem.diva
+  Version: 1.0
+  Data Directory: /data/user/0/jakhar.aseem.diva
+  APK Path: /data/app/~~MYpEr24My1aHecbjNcVqsg==/jakhar.aseem.diva-NZW9LZ8ig4uHXtB-1LtNlw==/base.apk
+  UID: 10481
+  GID: [3003]
+  Shared Libraries: [/system/framework/android.test.base.jar, /system/framework/org.apache.http.legacy.jar]
+  Shared User ID: null
+  Uses Permissions:
+  - android.permission.WRITE_EXTERNAL_STORAGE
+  - android.permission.READ_EXTERNAL_STORAGE
+  - android.permission.INTERNET
+  - android.permission.POST_NOTIFICATIONS
+  - android.permission.ACCESS_MEDIA_LOCATION
+  - android.permission.READ_MEDIA_AUDIO
+  - android.permission.READ_MEDIA_VIDEO
+  - android.permission.READ_MEDIA_IMAGES
+  Defines Permissions:
+  - None
+
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+Attack Surface:
+  3 activities exported
+  0 broadcast receivers exported
+  1 content providers exported
+  0 services exported
+    is debuggable
+checking activities...
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+Package: jakhar.aseem.diva
+  jakhar.aseem.diva.MainActivity
+    Permission: null
+  jakhar.aseem.diva.APICredsActivity
+    Permission: null
+  jakhar.aseem.diva.APICreds2Activity
+    Permission: null
+
+starting jakhar.aseem.diva.MainActivity...
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+starting jakhar.aseem.diva.APICredsActivity...
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+starting jakhar.aseem.diva.APICreds2Activity...
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+checking for sql injection...
+
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+Scanning jakhar.aseem.diva...
+Not Vulnerable:
+  content://jakhar.aseem.diva.provider.notesprovider
+  content://jakhar.aseem.diva.provider.notesprovider/
+
+Injection in Projection:
+  content://jakhar.aseem.diva.provider.notesprovider/notes/
+  content://jakhar.aseem.diva.provider.notesprovider/notes
+
+Injection in Selection:
+  content://jakhar.aseem.diva.provider.notesprovider/notes/
+  content://jakhar.aseem.diva.provider.notesprovider/notes
+checking content providers...
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+Scanning jakhar.aseem.diva...
+Able to Query    content://jakhar.aseem.diva.provider.notesprovider/notes/
+Unable to Query  content://jakhar.aseem.diva.provider.notesprovider
+Unable to Query  content://jakhar.aseem.diva.provider.notesprovider/
+Able to Query    content://jakhar.aseem.diva.provider.notesprovider/notes
+
+Accessible content URIs:
+  content://jakhar.aseem.diva.provider.notesprovider/notes/
+  content://jakhar.aseem.diva.provider.notesprovider/notes
+checking content://jakhar.aseem.diva.provider.notesprovider/notes/ for exposing info...
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+| _id | title    | note                                 |
+| 5   | Exercise | Alternate days running               |
+| 4   | Expense  | Spent too much on home theater       |
+| 6   | Weekend  | b333333333333r                       |
+| 3   | holiday  | Either Goa or Amsterdam              |
+| 2   | home     | Buy toys for baby, Order dinner      |
+| 1   | office   | 10 Meetings. 5 Calls. Lunch with CEO |
+
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+Accessible tables for uri content://jakhar.aseem.diva.provider.notesprovider/notes/:
+  android_metadata
+  notes
+  sqlite_sequence
+
+checking content://jakhar.aseem.diva.provider.notesprovider/notes for exposing info...
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+| _id | title    | note                                 |
+| 5   | Exercise | Alternate days running               |
+| 4   | Expense  | Spent too much on home theater       |
+| 6   | Weekend  | b333333333333r                       |
+| 3   | holiday  | Either Goa or Amsterdam              |
+| 2   | home     | Buy toys for baby, Order dinner      |
+| 1   | office   | 10 Meetings. 5 Calls. Lunch with CEO |
+
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+Accessible tables for uri content://jakhar.aseem.diva.provider.notesprovider/notes:
+  android_metadata
+  notes
+  sqlite_sequence
+
+checking broadcast receivers...
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+Package: jakhar.aseem.diva
+  No matching receivers.
+
+checking services...
+Selecting 2c6ec9fac492aaa1 (samsung SM-A326U 13)
+
+Package: jakhar.aseem.diva
+  No exported services.
